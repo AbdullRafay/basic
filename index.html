@@ -6,27 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<h1>user registration form</h1>
+<form>
 <body>
-    <h1>forms</h1>
-    <form id="information form">
-        <label for="name">name</label>
-        <input type="text" name="name" value="rafay" maxlength="10" placeholder="name" required />
-
-        <label for="father-name">father name</label>
-        <input type="text" name="father-name" value="rafay amir" placeholder="father name" maxlength="15" required>
-
-        <input type="email"
-        placeholder="enter your email"
-        name="user-email"
-        required>
-
-        <input type="password"
-        name="user-password"
-        maxlength="10"
-        placeholder="password"
-        />
-    </form>
+    <label for="first-name">First name:</label>
+    <input type="text" maxlength="10" required /><br><br>
+    <label for="last-name">Last name:</label>
+    <input type="text" maxlength="10" required /><br><br>
+    <label for="password">Password</label>
+    <input type="password" maxlength="100" required minlength="8">
+    <br><br>
+    <label for="text-area">Bio:</label>
+    <textarea name="" cols="40" rows="5"></textarea>
+    <br>
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender">
+        <label for="female">Female</label><br>
+        <input type="radio" name="gender">
+        <label for="other">Other</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Interest</legend>
+        <input type="checkbox"><label for="music">Music</label><br>
+        <input type="checkbox"><label for="sports">Sports</label><br>
+        <input type="checkbox"><label for="reading">Reading</label>
+    </fieldset>
+    <br>
+<label for="country">Country:</label>
+<select name="country" id="">
+    <option value="qatar">qatar</option>
+<option value="canada">canada</option>
+<option selected value="pakistan">pakistan</option>
+<option value="UAE">UAE</option>
+<option value="united-states">united states</option>
+</select>
+<br>
+<label for="colors">prefered colors</label>
+<select name="prefered-colors" id="colors">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+</select>
 </body>
-
+</form>
 </html>
